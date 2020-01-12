@@ -2000,8 +2000,9 @@ input, select, textarea {
 					-o-transition: color 0.25s ease-in-out;
 					-ms-transition: color 0.25s ease-in-out;
 					transition: color 0.25s ease-in-out;
-					font-size: 0.85em;
+					font-size: 1em;
 					letter-spacing: 3px;
+					font-weight: bolder;
 				}
 
 			#nav > ul > li > ul {
