@@ -1,4 +1,9 @@
 @import "reset.css";
+.sidebar {
+  border-top: 4px solid silver;
+  border-bottom: 1px solid silver;
+  background-color: #f4f4f4;
+}
 html {
   font-size: 62.5%;
 }
@@ -39,9 +44,6 @@ p {
 .spacer {
   width: calc(100 * 1%);
 }
-.blorder {
-  border: 1px solid salmon;
-}
 @font-face {
   font-family: 'Gentium Basic';
   font-style: normal;
@@ -65,7 +67,6 @@ div.container > * {
 }
 nav {
   padding: 0 10px;
-  border: 1px solid salmon;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -76,10 +77,8 @@ nav a {
 section {
   display: flex;
   justify-content: space-between;
-  border: 1px solid salmon;
 }
 section .article {
-  border: 1px solid salmon;
   width: calc(100 * 5%);
   margin: 20px;
   padding: 10px;
@@ -88,8 +87,7 @@ section .profiles {
   margin: 20px;
   padding: 10px;
   width: calc(100 * 3%);
-}
-section .profiles img {
-  max-width: 300px;
-  margin: 0 auto;
+  border-top: 4px solid silver;
+  border-bottom: 1px solid silver;
+  background-color: #f4f4f4;
 }
