@@ -1,28 +1,10 @@
 @import "./reset.css";
+@import "./foundation.less";
 @import "./tricks.less";
 
 @import url('https://fonts.googleapis.com/css?family=Gentium+Basic|Work+Sans:900&display=swap');
 
-html { font-size: 62.5%; } /* =10px */
 
-body { 
-	font-family: 'Gentium Basic';
-	font-size: 1.8rem; /* =14px */
-	color: #333;
-}
-
-h1, h2 {
-	font-family: 'Work Sans';
-}
-
-h3, h4 {
-	font-family: 'Gentium Basic';
-	color: #444;
-}
-
-h1 {font-size: 3.0rem}
-h2 {font-size: 2.4rem}
-h3 {font-size: 2.0rem; font-style: oblique;}
 
 div.container {
 	width: 900px;
@@ -39,4 +21,26 @@ nav {
 	justify-content: space-between;
 	align-items: baseline;
 	a {margin: 5px;}
+}
+
+section {
+	display: flex;
+	justify-content: space-between;
+	.blorder();
+	
+	.article {
+		.blorder();
+		width: calc(@col * 5%);
+		margin: @col-margin;
+		padding: @col-padding;
+	}
+	.profiles {
+		margin: @col-margin;
+		padding: @col-padding;
+		width: calc(@col * 3%);
+		img {
+			max-width: @col3;
+			margin: 0 auto;
+		}
+	}
 }
