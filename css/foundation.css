@@ -1,7 +1,7 @@
 .sidebar {
-  border-top: 4px solid silver;
-  border-bottom: 1px solid silver;
-  background-color: #f4f4f4;
+  border-top: 6px solid #c9eaea;
+  border-bottom: 2px solid #c9eaea;
+  background-color: #e3f4f4;
 }
 html {
   font-size: 62.5%;
