@@ -1,0 +1,45 @@
+.sidebar {
+  border-top: 4px solid silver;
+  border-bottom: 1px solid silver;
+  background-color: #f4f4f4;
+}
+html {
+  font-size: 62.5%;
+}
+/* =10px */
+body {
+  font-family: 'Gentium Basic';
+  font-size: 1.8rem;
+  /* =14px */
+  color: #333;
+}
+h1,
+h2 {
+  font-family: 'Work Sans';
+  margin: 0px 0px 1.2rem 0px;
+}
+h3,
+h4 {
+  font-family: 'Gentium Basic';
+  color: #444;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.4rem;
+}
+h3 {
+  font-size: 2rem;
+  font-style: oblique;
+}
+p {
+  line-height: 3rem;
+  margin: 0 0 2rem 0;
+}
+.divider-blank {
+  height: 30px;
+}
+.spacer {
+  width: calc(100 * 1%);
+}

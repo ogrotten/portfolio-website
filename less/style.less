@@ -5,7 +5,6 @@
 @import url('https://fonts.googleapis.com/css?family=Gentium+Basic|Work+Sans:900&display=swap');
 
 
-
 div.container {
 	width: 900px;
 	margin: 0 auto;
@@ -15,12 +14,22 @@ div.container {
 }
 
 nav {
-	padding: 0 10px;
 	.blorder();
+	border-bottom: 4px, solid, #aaaaaa;
+	padding: 0 10px;
 	display: flex;
 	justify-content: space-between;
-	align-items: baseline;
+	align-items: center;
 	a {margin: 5px;}
+	.navlinks {
+		width: 20%
+	}
+	.right {
+		text-align: right;
+	}
+	h1 {
+		font-size: 3.6rem;
+	}
 }
 
 section {
