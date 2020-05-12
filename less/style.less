@@ -13,28 +13,39 @@ div.container {
 	}
 }
 
-nav {
-	.blorder();
-	border-bottom: 4px, solid, #aaaaaa;
-	padding: 0 10px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	a {margin: 5px;}
-	.navlinks {
-		width: 20%;
-		a {
+header {
+	// .blorder();
+	// border: 24px, solid, #6b2e2e;
+	
+	background-color: @neutral-bg-color;
+	
+	nav {
+		.blorder();
+		display: flex;
+		justify-content: space-between;
+		margin: 10px 0;
+		align-items: center;
+		a {margin: 5px;}
+		.navlinks {
+			.blorder();
+			display: flex;
+			justify-content: space-between;
+			width: 20%;
+			a {
+				margin: 0;
+			}
+		}
+		.right {
+			text-align: right;
+		}
+		h1 {
+			font-size: 3.6rem;
 			margin: 0;
 		}
 	}
-	.right {
-		text-align: right;
-	}
-	h1 {
-		font-size: 3.6rem;
-		margin: 0;
-	}
+	.headfoot();
 }
+
 
 section {
 	display: flex;

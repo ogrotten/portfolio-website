@@ -4,6 +4,11 @@
   border-bottom: 2px solid #c9eaea;
   background-color: #e3f4f4;
 }
+.headfoot {
+  border-top: 6px solid #dcdcdc;
+  border-bottom: 2px solid #dcdcdc;
+  background-color: #eee;
+}
 html {
   font-size: 62.5%;
 }
@@ -65,26 +70,32 @@ div.container {
 div.container > * {
   padding: 10px;
 }
-nav {
-  border-bottom: 4px, solid, #aaaaaa;
-  padding: 0 10px;
+header {
+  border-top: 6px solid #dcdcdc;
+  border-bottom: 2px solid #dcdcdc;
+  background-color: #eee;
+}
+header nav {
   display: flex;
   justify-content: space-between;
+  margin: 10px 0;
   align-items: center;
 }
-nav a {
+header nav a {
   margin: 5px;
 }
-nav .navlinks {
+header nav .navlinks {
+  display: flex;
+  justify-content: space-between;
   width: 20%;
 }
-nav .navlinks a {
+header nav .navlinks a {
   margin: 0;
 }
-nav .right {
+header nav .right {
   text-align: right;
 }
-nav h1 {
+header nav h1 {
   font-size: 3.6rem;
   margin: 0;
 }
