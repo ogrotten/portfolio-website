@@ -1,32 +1,52 @@
 @import "reset.css";
-.sidebar {
-  border-top: 6px solid #c9eaea;
-  border-bottom: 2px solid #c9eaea;
-  background-color: #e3f4f4;
+@font-face {
+  font-family: 'Gentium Basic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Gentium Basic'), local('GentiumBasic'), url(https://fonts.gstatic.com/s/gentiumbasic/v11/Wnz9HAw9aB_JD2VGQVR80We3LA2JjQ.ttf) format('truetype');
 }
-.headfoot {
-  border-top: 6px solid #dcdcdc;
-  border-bottom: 2px solid #dcdcdc;
-  background-color: #eee;
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/worksans/v7/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K-DQBi8Jow.ttf) format('truetype');
+}
+@font-face {
+  font-family: "SansFont";
+  src: url("../fonts/HelveticaNeueLTStd-Roman.otf") format("truetype");
+}
+@font-face {
+  font-family: "SansFontI";
+  src: url("../fonts/HelveticaNeueLTStd-It.otf") format("truetype");
+}
+@font-face {
+  font-family: "SansFontB";
+  src: url("../fonts/HelveticaNeueLTStd-Blk.otf") format("truetype");
+}
+@font-face {
+  font-family: "SansFontBI";
+  src: url("../fonts/HelveticaNeueLTStd-BlkIt.otf") format("truetype");
 }
 html {
   font-size: 62.5%;
 }
 /* =10px */
 body {
-  font-family: 'Gentium Basic';
+  font-family: 'SansFont';
   font-size: 1.8rem;
   /* =14px */
   color: #333;
 }
 h1,
 h2 {
-  font-family: 'Work Sans';
+  font-family: 'SansFontB';
   margin: 0px 0px 1.2rem 0px;
 }
 h3,
 h4 {
-  font-family: 'Gentium Basic';
+  font-family: 'SansFontBI';
   color: #444;
 }
 h1 {
@@ -43,25 +63,20 @@ p {
   line-height: 3rem;
   margin: 0 0 2rem 0;
 }
+.sidebar {
+  border-top: 6px solid #c9eaea;
+  border-bottom: 2px solid #c9eaea;
+  background-color: #e3f4f4;
+}
+.headfoot {
+  border-top: 6px solid #dcdcdc;
+  border-bottom: 2px solid #dcdcdc;
+}
 .divider-blank {
   height: 30px;
 }
 .spacer {
   width: calc(100 * 1%);
-}
-@font-face {
-  font-family: 'Gentium Basic';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Gentium Basic'), local('GentiumBasic'), url(https://fonts.gstatic.com/s/gentiumbasic/v11/Wnz9HAw9aB_JD2VGQVR80We3LA2JjQ.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Work Sans';
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/worksans/v7/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K-DQBi8Jow.ttf) format('truetype');
 }
 div.container {
   width: 900px;
@@ -73,7 +88,6 @@ div.container > * {
 header {
   border-top: 6px solid #dcdcdc;
   border-bottom: 2px solid #dcdcdc;
-  background-color: #eee;
 }
 header nav {
   display: flex;
@@ -103,16 +117,35 @@ section {
   display: flex;
   justify-content: space-between;
 }
-section .article {
+section article {
   width: calc(100 * 5%);
   margin: 20px;
   padding: 10px;
 }
-section .profiles {
+section .profiles,
+section .blurb {
   margin: 20px;
   padding: 10px;
   width: calc(100 * 3%);
   border-top: 6px solid #c9eaea;
   border-bottom: 2px solid #c9eaea;
   background-color: #e3f4f4;
+}
+section article.logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+section article.logos .logo {
+  height: 64px;
+  width: 64px;
+}
+section article.logos .react {
+  height: 64px;
+  width: 64px;
+  transform: scale(1.8, 1.8);
+}
+section article.logos .js {
+  height: 64px;
+  width: 64px;
 }

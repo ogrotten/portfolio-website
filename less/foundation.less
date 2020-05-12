@@ -1,39 +1,51 @@
+@import url(
+	'https://fonts.googleapis.com/css?family=Gentium+Basic|Work+Sans:900&display=swap'
+);
+
+@font-face {
+	font-family: "SansFont";
+	src: url("../fonts/HelveticaNeueLTStd-Roman.otf") format("truetype");
+}
+
+@font-face {
+	font-family: "SansFontI";
+	src: url("../fonts/HelveticaNeueLTStd-It.otf") format("truetype");
+}
+
+@font-face {
+	font-family: "SansFontB";
+	src: url("../fonts/HelveticaNeueLTStd-Blk.otf") format("truetype");
+}
+
+@font-face {
+	font-family: "SansFontBI";
+	src: url("../fonts/HelveticaNeueLTStd-BlkIt.otf") format("truetype");
+}
+
 @sidebar-bg-color: #e3f4f4;
 @sidebar-border-color: darken(@sidebar-bg-color, 7%);
-@neutral-bg-color: #eee;
+@neutral-bg-color: rgb(238,238,238);
 @neutral-border-color: darken(@neutral-bg-color, 7%);
 
 @col: 100;
 @col-margin: 20px;
 @col-padding: 10px;
 
-.sidebar{
-	border-top: 6px solid @sidebar-border-color;
-	border-bottom: 2px solid @sidebar-border-color;
-	background-color: @sidebar-bg-color;
-}
-
-.headfoot{
-	border-top: 6px solid @neutral-border-color;
-	border-bottom: 2px solid @neutral-border-color;
-	background-color: @neutral-bg-color;
-}
-
 html { font-size: 62.5%; } /* =10px */
 
 body { 
-	font-family: 'Gentium Basic';
+	font-family: 'SansFont';
 	font-size: 1.8rem; /* =14px */
 	color: #333;
 }
 
 h1, h2 {
-	font-family: 'Work Sans';
+	font-family: 'SansFontB';
 	margin: 0px 0px 1.2rem 0px;
 }
 
 h3, h4 {
-	font-family: 'Gentium Basic';
+	font-family: 'SansFontBI';
 	color: #444;
 }
 
@@ -44,6 +56,18 @@ h3 {font-size: 2.0rem; font-style: oblique;}
 p {
 	line-height: 3rem;
 	margin: 0 0 2rem 0;
+}
+
+.sidebar{
+	border-top: 6px solid @sidebar-border-color;
+	border-bottom: 2px solid @sidebar-border-color;
+	background-color: @sidebar-bg-color;
+}
+
+.headfoot{
+	border-top: 6px solid @neutral-border-color;
+	border-bottom: 2px solid @neutral-border-color;
+	// background-color: @neutral-bg-color;
 }
 
 .divider-blank {

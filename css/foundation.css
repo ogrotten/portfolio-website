@@ -1,26 +1,38 @@
-.sidebar {
-  border-top: 6px solid #c9eaea;
-  border-bottom: 2px solid #c9eaea;
-  background-color: #e3f4f4;
+@font-face {
+  font-family: 'Gentium Basic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Gentium Basic'), local('GentiumBasic'), url(https://fonts.gstatic.com/s/gentiumbasic/v11/Wnz9HAw9aB_JD2VGQVR80We3LA2JjQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/worksans/v7/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXBi8Jow.ttf) format('truetype');
 }
 html {
   font-size: 62.5%;
 }
 /* =10px */
 body {
-  font-family: 'Gentium Basic';
+  font-family: 'Helvetica Neue';
   font-size: 1.8rem;
   /* =14px */
+  font-weight: normal;
   color: #333;
 }
 h1,
 h2 {
-  font-family: 'Work Sans';
+  font-family: 'Helvetica Neue';
+  font-weight: 900;
   margin: 0px 0px 1.2rem 0px;
 }
 h3,
 h4 {
-  font-family: 'Gentium Basic';
+  font-family: 'Helvetica Neue';
+  font-weight: bolder;
   color: #444;
 }
 h1 {
@@ -36,6 +48,16 @@ h3 {
 p {
   line-height: 3rem;
   margin: 0 0 2rem 0;
+}
+.sidebar {
+  border-top: 6px solid #c9eaea;
+  border-bottom: 2px solid #c9eaea;
+  background-color: #e3f4f4;
+}
+.headfoot {
+  border-top: 6px solid #dcdcdc;
+  border-bottom: 2px solid #dcdcdc;
+  background-color: #eee;
 }
 .divider-blank {
   height: 30px;

@@ -2,7 +2,6 @@
 @import "./foundation.less";
 @import "./tricks.less";
 
-@import url('https://fonts.googleapis.com/css?family=Gentium+Basic|Work+Sans:900&display=swap');
 
 
 div.container {
@@ -17,8 +16,9 @@ header {
 	// .blorder();
 	// border: 24px, solid, #6b2e2e;
 	
-	background-color: @neutral-bg-color;
-	
+	// background-color: @neutral-bg-color;
+	// background: linear-gradient(0deg, rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%);
+
 	nav {
 		.blorder();
 		display: flex;
@@ -52,13 +52,13 @@ section {
 	justify-content: space-between;
 	.blorder();
 	
-	.article {
+	article {
 		.blorder();
 		width: calc(@col * 5%);
 		margin: @col-margin;
 		padding: @col-padding;
 	}
-	.profiles {
+	.profiles, .blurb {
 		margin: @col-margin;
 		padding: @col-padding;
 		width: calc(@col * 3%);
@@ -66,4 +66,27 @@ section {
 		// border-bottom: 1px solid silver;
 		.sidebar();
 	}
+
+	article.logos {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+
+		.logo {
+			height: 64px;
+			width: 64px;
+		}
+		.react {
+			height: 64px;
+			width: 64px;
+			transform: scale(1.8, 1.8);
+		}
+		.js {
+			height: 64px;
+			width: 64px;
+			// transform: scale(.9,.9);
+		}
+	}
+	
+	
 }
