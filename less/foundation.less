@@ -26,6 +26,7 @@
 @sidebar-border-color: darken(@sidebar-bg-color, 7%);
 @neutral-bg-color: rgb(238,238,238);
 @neutral-border-color: darken(@neutral-bg-color, 7%);
+@project-offset-color: lighten(@neutral-bg-color, 3.5%);
 
 @col: 100;
 @col-margin: 20px;
@@ -35,7 +36,7 @@ html { font-size: 62.5%; } /* =10px */
 
 body { 
 	font-family: 'SansFont';
-	font-size: 1.8rem; /* =14px */
+	font-size: 1.6rem; /* =14px */
 	color: #333;
 }
 
@@ -56,6 +57,11 @@ h3 {font-size: 2.0rem; font-style: oblique;}
 p {
 	line-height: 3rem;
 	margin: 0 0 2rem 0;
+	&.subtitle {
+		font-family: "SansFontI";
+		font-size: 1.3rem;
+		margin-top: -10px;
+	}
 }
 
 .sidebar{

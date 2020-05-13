@@ -8,31 +8,44 @@
 @font-face {
   font-family: 'Work Sans';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 900;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/worksans/v7/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXBi8Jow.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/worksans/v7/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K-DQBi8Jow.ttf) format('truetype');
+}
+@font-face {
+  font-family: "SansFont";
+  src: url("../fonts/HelveticaNeueLTStd-Roman.otf") format("truetype");
+}
+@font-face {
+  font-family: "SansFontI";
+  src: url("../fonts/HelveticaNeueLTStd-It.otf") format("truetype");
+}
+@font-face {
+  font-family: "SansFontB";
+  src: url("../fonts/HelveticaNeueLTStd-Blk.otf") format("truetype");
+}
+@font-face {
+  font-family: "SansFontBI";
+  src: url("../fonts/HelveticaNeueLTStd-BlkIt.otf") format("truetype");
 }
 html {
   font-size: 62.5%;
 }
 /* =10px */
 body {
-  font-family: 'Helvetica Neue';
+  font-family: 'SansFont';
   font-size: 1.8rem;
   /* =14px */
-  font-weight: normal;
   color: #333;
 }
 h1,
 h2 {
-  font-family: 'Helvetica Neue';
-  font-weight: 900;
+  font-family: 'SansFontB';
   margin: 0px 0px 1.2rem 0px;
 }
 h3,
 h4 {
-  font-family: 'Helvetica Neue';
-  font-weight: bolder;
+  font-family: 'SansFontBI';
   color: #444;
 }
 h1 {
@@ -57,10 +70,6 @@ p {
 .headfoot {
   border-top: 6px solid #dcdcdc;
   border-bottom: 2px solid #dcdcdc;
-  background-color: #eee;
-}
-.divider-blank {
-  height: 30px;
 }
 .spacer {
   width: calc(100 * 1%);
