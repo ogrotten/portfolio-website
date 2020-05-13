@@ -72,9 +72,6 @@ p {
   border-top: 6px solid #dcdcdc;
   border-bottom: 2px solid #dcdcdc;
 }
-.divider-blank {
-  height: 30px;
-}
 .spacer {
   width: calc(100 * 1%);
 }
@@ -137,15 +134,6 @@ section article.logos {
   justify-content: space-evenly;
 }
 section article.logos .logo {
-  height: 64px;
-  width: 64px;
-}
-section article.logos .react {
-  height: 64px;
-  width: 64px;
-  transform: scale(1.8, 1.8);
-}
-section article.logos .js {
-  height: 64px;
-  width: 64px;
+  height: 50px;
+  width: 50px;
 }
